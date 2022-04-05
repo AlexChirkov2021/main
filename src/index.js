@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./app";
 import Users from "./components/users";
-import HelloWorld from "./components/HelloWorld";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -9,8 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Users />
-    {/* <HelloWorld /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
