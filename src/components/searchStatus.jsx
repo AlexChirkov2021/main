@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 const SearchStatus = ({ length }) => {
     return (
         <div
-            className="badge bg-primary w-25"
-            style={{ fontSize: 18, display: "flex" }}
+            className="badge bg-primary"
+            style={{ fontSize: 18, display: "flex", width: "350px" }}
         >
-            {length > 1 && length < 5
-                ? `${length} человека тусанут с тобой сегодня`
-                : `${length} человек тусанет с тобой сегодня`}
+            <span>
+                {length > 1 && length < 5
+                    ? `${length} человека тусанут с тобой сегодня`
+                    : `${length} человек тусанет с тобой сегодня`}
+            </span>
         </div>
     );
 };
