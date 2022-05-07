@@ -14,14 +14,14 @@ const UserPage = ({ userId }) => {
     const handleSave = () => {
         history.replace("/users");
     };
-    console.log(selectedUser);
+
     if (selectedUser) {
         return (
             <>
                 <h1>{selectedUser.name}</h1>
-                <h1>
+                <h2>
                     Профессия: {Object.values(selectedUser.profession.name)}
-                </h1>
+                </h2>
                 {selectedUser.qualities.map((quality) => (
                     <p
                         className={"badge m-1 bg-" + quality.color}
@@ -32,12 +32,12 @@ const UserPage = ({ userId }) => {
                 ))}
 
                 <p>completedMeetings: {selectedUser.completedMeetings}</p>
-                <h1>rate: {selectedUser.rate}</h1>
+                <h2>rate: {selectedUser.rate}</h2>
                 <button onClick={() => handleSave()}>Все пользователи</button>
             </>
         );
     }
-    return "...loading";
+    return "loading...";
 };
 
 UserPage.propTypes = {

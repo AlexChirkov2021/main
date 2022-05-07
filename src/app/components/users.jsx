@@ -10,10 +10,11 @@ import _ from "lodash";
 import { useParams } from "react-router-dom";
 import UserPage from "./userPage";
 
-const Users = (match) => {
+const Users = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfession] = useState();
     const [selectedProf, setSelectedProf] = useState();
+    const [searchName, setSearchName] = useState();
 
     const [sortBy, setSortBy] = useState({ iter: "name", order: "asc" });
     const pageSize = 8;
@@ -26,6 +27,11 @@ const Users = (match) => {
     const handleDelete = (userId) => {
         setUsers(users.filter((user) => user._id !== userId));
     };
+
+    const clearFilter = () => {
+        setSelectedProf();
+    };
+
     const handleToggleBookMark = (id) => {
         setUsers(
             users.map((user) => {
@@ -54,6 +60,11 @@ const Users = (match) => {
         setSortBy(item);
     };
 
+    const handleChange = ({ target }) => {
+        clearFilter();
+        setSearchName(target.value);
+    };
+
     if (users) {
         const filteredUsers = selectedProf
             ? users.filter(
@@ -61,8 +72,23 @@ const Users = (match) => {
                       JSON.stringify(user.profession) ===
                       JSON.stringify(selectedProf)
               )
+            : searchName
+            ? users.filter((user) =>
+                  user.name
+                      .toLowerCase()
+                      .includes(searchName.trim().toLowerCase())
+              )
             : users;
 
+        // const filteredUsers = selectedProf
+        //     ? users.filter((user) => user.profession._id === selectedProf._id)
+        //     : searchName
+        //     ? users.filter((user) =>
+        //           user.name
+        //               .toLowerCase()
+        //               .includes(searchName.trim().toLowerCase())
+        //       )
+        //     : users;
         const count = filteredUsers.length;
         const sortedUsers = _.orderBy(
             filteredUsers,
@@ -70,9 +96,6 @@ const Users = (match) => {
             [sortBy.order]
         );
         const usersCrop = paginate(sortedUsers, currentPage, pageSize);
-        const clearFilter = () => {
-            setSelectedProf();
-        };
 
         if (userId) {
             return <UserPage userId={userId} />;
@@ -90,13 +113,22 @@ const Users = (match) => {
                                 className="btn btn-secondary mt-2"
                                 onClick={clearFilter}
                             >
-                                {" "}
                                 Очистить
                             </button>
                         </div>
                     )}
                     <div className="d-flex flex-column">
                         <SearchStatus length={count} />
+                        <div>
+                            <form className="mb-4" action="">
+                                <input
+                                    className="w-100"
+                                    type="text"
+                                    placeholder="Search..."
+                                    onChange={handleChange}
+                                ></input>
+                            </form>
+                        </div>
                         {count > 0 && (
                             <UserTable
                                 users={usersCrop}
