@@ -18,4 +18,4 @@
 9. Реализован выбор пользователя по id с возможностью добавления или удаления комментариев
 ![image](https://user-images.githubusercontent.com/83139924/172155249-d9ce9080-e39f-4b20-9505-c70c320dccd7.png)
 10. Реализовано окно редактирования пользователя при нажатии на шестеренку в окне выбора пользователя
-![image](https://user-images.githubusercontent.com/83139924/172155494-e282c40a-3d7b-4d4c-9638-412218629885.png)
+![image](https://user-images.githubusercontent.com/83139924/172157105-864f26cf-5521-4c5c-99f8-9b1d741f4fd5.png)
