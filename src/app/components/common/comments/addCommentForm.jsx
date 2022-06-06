@@ -56,7 +56,7 @@ const AddCommentForm = ({ onSubmit }) => {
         }));
     return (
         <div>
-            <h2>New comment</h2>
+            <h2>Новый комментарий</h2>
             <form onSubmit={handleSubmit}>
                 <SelectField
                     onChange={handleChange}

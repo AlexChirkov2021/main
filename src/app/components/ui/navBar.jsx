@@ -5,17 +5,17 @@ const NavBar = () => {
         <ul className="nav">
             <li className="nav-item">
                 <Link className="nav-link " aria-current="page" to="/">
-                    Main
+                    Главная
                 </Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link " aria-current="page" to="/login">
-                    Login
+                    Авторизация
                 </Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link " aria-current="page" to="/users">
-                    Users
+                    Пользователи
                 </Link>
             </li>
         </ul>

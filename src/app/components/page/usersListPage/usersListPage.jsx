@@ -106,7 +106,7 @@ const UsersListPage = () => {
                     <input
                         type="text"
                         name="searchQuery"
-                        placeholder="Search..."
+                        placeholder="Поиск..."
                         onChange={handleSearchQuery}
                         value={searchQuery}
                     />
@@ -131,7 +131,7 @@ const UsersListPage = () => {
             </div>
         );
     }
-    return "loading...";
+    return "Загрузка...";
 };
 UsersListPage.propTypes = {
     users: PropTypes.array

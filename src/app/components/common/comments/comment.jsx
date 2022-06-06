@@ -23,7 +23,7 @@ const Comment = ({
         <div className="bg-light card-body  mb-3">
             <div className="row">
                 {isLoading ? (
-                    "Loading ..."
+                    "Загрузка ..."
                 ) : (
                     <div className="col">
                         <div className="d-flex flex-start ">
