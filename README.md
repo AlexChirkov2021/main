@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+1. Загрузка данных и отображение пользователей с БД MongoDB, сервер для подключения доступен https://github.com/AlexChirkov2021/serverForMain.
+Автоматически происходит сортировка по имени.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/83139924/177537740-ae8750b4-35bd-43c4-9c91-127e6d8e741d.png)
 
-## Available Scripts
+2.Разработана фильтрация по имени
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/83139924/177538111-78d1d30b-9d7a-4530-a7bf-484c78cbf7a9.png)
 
-### `yarn start`
+3. Разработана пагинация, которая может быть изменена в переменной PageSize
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://user-images.githubusercontent.com/83139924/177538289-4fe31dcb-064e-4202-9554-a7465ce27e4f.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Также разработана сортировка по оценке и количеству встреч
 
-### `yarn test`
+![image](https://user-images.githubusercontent.com/83139924/177538371-7fd0484a-942f-458b-aee5-cb1c0dbc7adf.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/83139924/177538398-aee0485a-2a11-429c-ac5e-8fc0adaed5b4.png)
 
-### `yarn build`
+5. Разработана форма логина и регистрации в систему с валидацией.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/83139924/177538466-9d28fa39-6210-409b-a788-0eea41da89b7.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/83139924/177538550-dbae5434-90a7-40c1-aa55-11215739fb9f.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+На данном этапе происходит переброска данных в Firebase, а также авторизация и аутентификация. Поэтому некоторые данные могут некорректно отображаться.
