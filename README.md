@@ -1,7 +1,7 @@
 1. Загрузка данных и отображение пользователей с БД MongoDB, сервер для подключения доступен https://github.com/AlexChirkov2021/serverForMain.
 Автоматически происходит сортировка по имени.
 
-![image](https://user-images.githubusercontent.com/83139924/177537740-ae8750b4-35bd-43c4-9c91-127e6d8e741d.png)
+![image](https://user-images.githubusercontent.com/83139924/177538922-47fb6be0-d444-4c13-adc1-d72063a2d05d.png)
 
 2.Разработана фильтрация по имени
 
