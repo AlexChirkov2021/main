@@ -142,7 +142,7 @@ const RegisterForm = () => {
             />
             <SelectField
                 label="Выбери свою профессию"
-                defaultOption="Выбрать..."
+                defaultOption="Choose..."
                 options={professions}
                 name="profession"
                 onChange={handleChange}
@@ -151,9 +151,9 @@ const RegisterForm = () => {
             />
             <RadioField
                 options={[
-                    { name: "Мужской", value: "male" },
-                    { name: "Женский", value: "female" },
-                    { name: "Другой", value: "other" }
+                    { name: "Male", value: "male" },
+                    { name: "Female", value: "female" },
+                    { name: "Other", value: "other" }
                 ]}
                 value={data.sex}
                 name="sex"
@@ -180,7 +180,7 @@ const RegisterForm = () => {
                 type="submit"
                 disabled={!isValid}
             >
-                Отправить
+                Submit
             </button>
         </form>
     );

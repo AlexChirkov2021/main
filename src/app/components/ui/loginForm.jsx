@@ -86,7 +86,7 @@ const LoginForm = () => {
                 type="submit"
                 disabled={!isValid}
             >
-                Отправить
+                Submit
             </button>
         </form>
     );
