@@ -13,7 +13,7 @@
 
 4. Также разработана сортировка по оценке и количеству встреч
 
-![image](https://user-images.githubusercontent.com/83139924/177538371-7fd0484a-942f-458b-aee5-cb1c0dbc7adf.png)
+![image](https://user-images.githubusercontent.com/83139924/177539036-00bc1d48-c71d-41da-b89f-264622440f39.png)
 
 ![image](https://user-images.githubusercontent.com/83139924/177538398-aee0485a-2a11-429c-ac5e-8fc0adaed5b4.png)
 
