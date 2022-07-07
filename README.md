@@ -1,4 +1,4 @@
-1. Загрузка данных и отображение пользователей с БД MongoDB, сервер для подключения доступен https://github.com/AlexChirkov2021/serverForMain.
+1. Загрузка данных и отображение пользователей с БД Firebase.
 Автоматически происходит сортировка по имени.
 
 ![image](https://user-images.githubusercontent.com/83139924/177538922-47fb6be0-d444-4c13-adc1-d72063a2d05d.png)
@@ -22,5 +22,3 @@
 ![image](https://user-images.githubusercontent.com/83139924/177538466-9d28fa39-6210-409b-a788-0eea41da89b7.png)
 
 ![image](https://user-images.githubusercontent.com/83139924/177538550-dbae5434-90a7-40c1-aa55-11215739fb9f.png)
-
-На данном этапе происходит переброска данных в Firebase, а также авторизация и аутентификация. Поэтому некоторые данные могут некорректно отображаться.
